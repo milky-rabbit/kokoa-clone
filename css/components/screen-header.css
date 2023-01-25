@@ -1,0 +1,33 @@
+.screen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px var(--horizontal-space);
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span {
+    margin-left: 25px;
+}
+
+.screen-header__dot {
+    /* margin-left: 100px;
+    margin-top: -20px; */
+    top : -5px;
+    right: -10px;
+}
+
+.screen-header__icons .fa-gear:hover {
+    animation: rotateZ 2s linear infinite;
+}
+
+.screen-header__icons .fa-music:hover,
+.screen-header__icons .fa-comment-dots:hover,
+.screen-header__icons .fa-magnifying-glass:hover {
+    animation: rotateY 2s linear infinite;
+}

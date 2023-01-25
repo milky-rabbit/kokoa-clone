@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Colors</title>
+    <style>
+body{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.parent {
+    width : 500px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.child {
+    width : 220px;
+    height: 400px;
+    border: 5px solid white;
+    position: relative;
+}
+.child:nth-child(1) {
+    background-color: tomato;
+}
+.child:nth-child(2) {
+    background-color: teal;
+}
+.child:nth-child(3) {
+    background-color: Burlywood;
+}
+.child:nth-child(4) {
+    background-color: Thistle;
+}
+.child > div {
+    background-color: white;
+    position: absolute;
+    top: 6%;
+    width: 100%;
+    /* margin: 25px 0 25px 0;
+    padding: 5px; */
+}
+.child > div h2, p {
+    padding: 0px 0 10px 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>The Best Colors</h1>
+    <div class="parent">
+        <div class="child">
+            <div>
+                <h2>Tomato</h2>
+                <p>#FF6347</p>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <h2>Teal</h2>
+                <p>#008080</p>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <h2>Burlywood</h2>
+                <p>#DEB887</p>
+            </div>
+        </div>
+        <div class="child">
+            <div>
+                <h2>Thistle</h2>
+                <p>#D7BFD7</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

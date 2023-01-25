@@ -1,0 +1,26 @@
+:root {
+    --yellow: #fae100;
+    --horizontal-space: 25px;
+    --main-border:  1px solid rgba(0,0,0, 0.2);
+
+    --gray:#eeeeee;
+    --lightgray:#f5f5f5;
+    --shadow: #e3e3e3;
+}
+
+
+
+@keyframes rotateY {
+    from {
+        transform: none;
+    } to {
+        transform : rotateY(360deg);
+    }
+}
+@keyframes rotateZ {
+    from {
+        transform: none;
+    } to {
+        transform : rotateZ(360deg);
+    }
+}

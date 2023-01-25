@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chan11.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <main>
+        <div class="playbox">
+            <nav class="status-bar">
+                <i class="fa-solid fa-arrow-left fa-fw fa-lg"></i>
+                <i class="fa-solid fa-magnifying-glass fa-fw fa-lg"></i>
+            </nav>
+            <div class="main">
+                <img src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/001/00/327/100327_500.jpg?5759f02d7699d4a547579ad15a080966/melon/resize/416/quality/80/optimize" 
+                    class="main_img">
+                <div class="main_text">
+                    <h4 class="main_text__singer">Green Day</h4>
+                    <h6 class="main_text__genre">Rock/Metal, WorldMusic, POP</h6>
+                </div>
+                <div class="main_btn">
+                    <div class="main_btn__black">Shuffle</div>
+                    <div class="main_btn__white">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>212,971</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="playlist">
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/007/60/554/760554_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Last Night On Earth</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/000/82/879/82879_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Wake Me up When September Ends</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item nowplaying">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/101/12/164/10112164_500.jpg?91950f466db7e4d388bbbe8e5414557e/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">American Idiot</h6>
+                        <div class="playlist-item_nowplaying__icon">
+                            <i class="fa-solid fa-chart-simple fa-lg"></i>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/000/19/749/19749_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Basket Case</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/101/12/164/10112164_500.jpg?91950f466db7e4d388bbbe8e5414557e/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Holiday</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/006/47/051/647051_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">21 Guns</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/021/66/655/2166655_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Stray Heart</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+            </ul>
+
+            <div class="player">
+                <div class="music-info">
+                    <h6 class="music-info__singer">Green Day</h6>
+                    <h4 class="music-info__title">American Idiot</h4>
+                </div>
+                <div class="player-btn">
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            </div>
+        </div>
+        <div class="playbox">
+            <nav class="status-bar">
+                <i class="fa-solid fa-arrow-left fa-fw fa-lg"></i>
+                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </nav>
+            <div class="playbox_main">  
+                <img src="https://cdnimg.melon.co.kr/cm/album/images/000/19/749/19749_500.jpg/melon/resize/282/quality/80/optimize" 
+                    class="playlist-item_img_lg">
+                <img src="https://cdnimg.melon.co.kr/cm/album/images/000/19/749/19749_500.jpg/melon/resize/282/quality/80/optimize" 
+                    class="playlist-item_img_lg_shadow">      
+                <div class="playbox_text">
+                    <h4 class="playbox_text__title">Basket Case</h4>
+                    <h6 class="playbox_text__singer">Green Day</h6>
+                </div>
+                <div class="playtime">
+                    <div><span>1:56</span></div>
+                    <div><span>2:10</span></div>
+                </div>
+                <div class="playbar">
+                   <div class="startbar"></div>
+                   <div class="endbar"></div>
+                   <div class="playing_pointer"></div>
+                </div>
+                <div class="playcontroller">
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-backward-step fa-lg"></i>
+                    <div class="playcontroller_bkcircle">
+                        <i class="fa-solid fa-play fa-ls"></i>
+                    </div>
+                    <i class="fa-solid fa-forward-step fa-lg"></i>
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/9d542b7da9.js" crossorigin="anonymous"></script>
+</body>
+</html>

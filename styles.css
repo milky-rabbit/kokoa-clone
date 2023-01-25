@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+:root {
+    --main-color : #fcce00;
+}
+
+* {
+    border: 1px dashed black;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+    background-color: tomato;
+}
+
+body {
+    background-color: thistle;
+    margin: 20px 5px;
+    padding: 20px;
+}
+
+h1 {
+    color : yellowgreen;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+address {
+    color: tomato;
+    text-align: center;
+}
+
+/* div {
+    padding: 20px;
+    /* border:2px solid black; 
+} */
+
+div#first{
+    background-color: whitesmoke;
+    width: 150px;
+    height: 150px;
+}
+
+div#second{
+    background-color: teal;
+    width: 100px;
+    height: 100px;
+}
+
+div#third{
+    background-color: wheat;
+    width: 50px;
+    height: 50px;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.tomato {
+    background-color: tomato; 
+}
+
+.btn {
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+#body {
+    height: 100vh;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+#body div {
+    width:150px;
+    height:150px;
+    color: white;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#body div:nth-child(2) {
+    background-color:sandybrown;
+}
+
+#positionbody {
+    height: 100vh;
+    margin: 20px;
+    background-color: beige ;
+    height: 100vh;
+}
+
+#staticbody {
+    background-color: whitesmoke ;
+    height: 100vh;
+    margin: 50px;
+}
+
+#positionbody div:not(#different) {
+    position: fixed;
+    width:150px;
+    height:150px;
+    color: white;
+    background-color: yellowgreen;
+    /* opacity: 0.2; */
+}
+
+#different {
+    /* top : 5px; */
+    /* position: fixed; */
+    width:200px;
+    height:150px;
+    color: white;
+    background-color: wheat;
+}
+
+#staticbody div:not(.green) {
+    width:150px;
+    height:150px;
+    background-color: wheat;
+    position: relative;
+}
+.green {
+    background-color: green;
+    width:50px;
+    height:50px;
+    /* position: relative;
+    top:-10px;
+    left:-10px; */
+    position: absolute; /* 가장 가까운 relative 부모를 기준으로 이동시킴 */
+    /* bottom: 0px; */
+    right: -40px;
+}
+
+span {
+    background-color: yellowgreen;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* div > span {
+    text-decoration: underline;
+} */
+
+p span {
+    color: white;
+}
+
+p + span {
+    text-decoration: underline;
+}
+
+
+p ~ span {
+    text-decoration: underline;
+}
+
+input:optional {
+    border: 1px solid wheat;
+}
+input:required {
+    border: 1px solid tomato;
+}
+input[type="password"] {
+    background-color: thistle;
+}
+input[placeholder="username"] {
+    background-color: yellowgreen;
+}
+input[placeholder~="name"] {
+    background-color: pink;
+}
+
+button:active {
+    background-color: tomato;
+}
+button:hover {
+    background-color: yellow;
+}
+button:focus {
+    background-color: pink;
+}
+
+/* 포커스를 갖고 있는 자식이 있는 경우...*/
+form:focus-within {
+    border-color: seagreen;
+}
+#recap input::placeholder {
+    color: blueviolet;
+}
+p::selection {
+    color: white;
+    background-color: yellowgreen;
+}
+
+p::first-letter {
+    font-size: 40px;
+    background-color: var(--main-color);
+}
+
+.accent {
+    font-variant: small-caps;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.content {
+    border: 1px solid #ccc;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content:hover {
+    overflow: visible;
+}

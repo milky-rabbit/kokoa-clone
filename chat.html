@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Kokoa Clone</title>
+</head>
+<body id="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
+              </svg>               -->
+            
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <i class="fa-solid fa-battery-half fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
+              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5h6.75V15H4.5v-4.5zM3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
+              </svg> -->
+        </div>
+    </div>
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html"><span><i class="fa-solid fa-angle-left fa-2x"></i></span></a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">쨘거s</h1>
+            <span>4</span>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-bars fa-lg"></i></span>
+        </div>
+    </header>
+
+    <main class="main-screen main-chat">
+        <div class="chat___timestamp">
+            Tuesday, June 30, 2023
+        </div>
+
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message_bubble">하얀 찐빵! 시간 있음? 이번주 콜??</span>
+                    <span class="message_time">19:27</span>
+                    <span class="message_view"></span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/whitebread.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">하얀 찐빵</span>
+                <div class="message__info">
+                    <span class="message_bubble">곧 방학이잖아. 시간 있지!</span>
+                    <span class="message_time">19:28</span>
+                    <span class="message_view"></span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/zhanzhan.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">쟌쟌</span>
+                <div class="message__info">
+                    <span class="message_bubble">힝.. 나는!!??</span>
+                    <span class="message_time">20:05</span>
+                    <span class="message_view"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat___timestamp">
+            Tuesday, July 01, 2023
+        </div>
+        <div class="message-row">
+            <img src="img/chat/whitebread.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">하얀 찐빵</span>
+                <div class="message__info">
+                    <span class="message_bubble">배고픈데...</span>
+                    <span class="message_time">01:00</span>
+                    <span class="message_view"></span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/chejung.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">채정</span>
+                <div class="message__info">
+                    <span class="message_bubble">자라</span>
+                    <span class="message_time">01:05</span>
+                    <span class="message_view"></span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message_bubble">내 새꾸! 밥 사주까!</span>
+                    <span class="message_time">02:10</span>
+                    <span class="message_view"></span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/whitebread.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">하얀 찐빵</span>
+                <div class="message__info">
+                    <span class="message_bubble">뭐래.....</span>
+                    <span class="message_time">02:15</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/chejung.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">채정</span>
+                <div class="message__info">
+                    <span class="message_bubble">😨😨😨😨😨</span>
+                    <span class="message_time">02:15</span>
+                    <span class="message_view">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/chejung.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">채정</span>
+                <div class="message__info">
+                    <span class="message_bubble">자라 쫌</span>
+                    <span class="message_time">02:15</span>
+                    <span class="message_view">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/chejung.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">채정</span>
+                <div class="message__info">
+                    <span class="message_bubble">어디야</span>
+                    <span class="message_time">12:05</span>
+                    <span class="message_view">2</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/chejung.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">채정</span>
+                <div class="message__info">
+                    <span class="message_bubble">지각 시 분당 벌금 5천원</span>
+                    <span class="message_time">012:05</span>
+                    <span class="message_view">2</span>
+                </div>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="img/chat/chejung.jpg" />
+            <div class="message-row__content">
+                <span class="message_author">채정</span>
+                <div class="message__info">
+                    <span class="message_bubble">카운트 센다.</span>
+                    <span class="message_time">12:05</span>
+                    <span class="message_view">2</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message..." />
+            <i class="fa-regular fa-face-smile fa-lg"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+    
+    <div id="no-mobile">
+        <span>Your screen is too big.</span>
+    </div>
+    <script src="https://kit.fontawesome.com/9d542b7da9.js" crossorigin="anonymous"></script>
+</body>
+</html>

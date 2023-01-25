@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chats - Kokoa Clone</title>
+    <style>
+        .nav__btn .fa-play-circle {
+            animation: rotateY 8s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
+              </svg>               -->
+            
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <i class="fa-solid fa-battery-half fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
+              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5h6.75V15H4.5v-4.5zM3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z" />
+              </svg> -->
+        </div>
+    </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">Music player</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span>
+                <a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a>
+                <div class="dot screen-header__dot">&nbsp;</div>
+            </span>
+        </div>
+    </header>
+
+    <main class="main-screen main-music">
+        <div class="playbox ">
+            <div class="main">
+                <img src="https://cdnimg.melon.co.kr/cm/album/images/000/19/749/19749_500.jpg/melon/resize/282/quality/80/optimize" 
+                    class="playlist-item_img_m">
+                <img src="https://cdnimg.melon.co.kr/cm/album/images/000/19/749/19749_500.jpg/melon/resize/282/quality/80/optimize" 
+                    class="playlist-item_img_m_shadow"> 
+                <div class="main_text">
+                    <h4 class="main_text__singer">Basket Case</h4>
+                    <h6 class="main_text__genre">Green Day</h6>
+                </div>
+                <div class="main_btn">
+                    <div class="main_btn__black">Shuffle</div>
+                    <div class="main_btn__white">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>212,971</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="playlist">
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/007/60/554/760554_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Last Night On Earth</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/000/82/879/82879_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Wake Me up When September Ends</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item nowplaying">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/101/12/164/10112164_500.jpg?91950f466db7e4d388bbbe8e5414557e/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">American Idiot</h6>
+                        <div class="playlist-item_nowplaying__icon">
+                            <i class="fa-solid fa-chart-simple fa-lg"></i>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/000/19/749/19749_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Basket Case</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/101/12/164/10112164_500.jpg?91950f466db7e4d388bbbe8e5414557e/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Holiday</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/006/47/051/647051_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">21 Guns</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+                <li class="playlist-item">
+                    <img src="https://cdnimg.melon.co.kr/cm/album/images/021/66/655/2166655_500.jpg/melon/resize/282/quality/80/optimize" 
+                        class="playlist-item_img">
+                    <div class="playlist-item_text">
+                        <h4 class="playlist-item__column music-info__singer_s">Green Day</h4>
+                        <h6 class="playlist-item__column music-info__title_s">Stray Heart</h6>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </li>
+            </ul>
+
+            <div class="player">
+                <div class="music-info">
+                    <h6 class="music-info__singer">Green Day</h6>
+                    <h4 class="music-info__title">American Idiot</h4>
+                </div>
+                <div class="player-btn">
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-pause"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+            </div>
+        </div>    
+    </main>
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a href="friends.html" lass="nav__link" >
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a href="chats.html" class="nav__link">
+                    <span class="nav__notification badge">6</span>
+                    <i class="fa-solid fa-comment  fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a href="find.html" class="nav__link">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a href="music.html" class="nav__link">
+                    <i class="far fa-play-circle  fa-2x"></i>
+                </a>
+            </li>
+            
+            <li class="nav__btn">
+                <a href="more.html" class="nav__link">
+                    <span class="nav__dot dot">&nbsp;</span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>Your screen is too big.</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/9d542b7da9.js" crossorigin="anonymous"></script>
+</body>
+</html>
