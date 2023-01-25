@@ -186,8 +186,9 @@
     animation-delay: 11s;
 }
 
+.message_picture,
 .message_picture img {
-    width: 60%;
+    width: 200px;
     height:  60%; 
 }
 
